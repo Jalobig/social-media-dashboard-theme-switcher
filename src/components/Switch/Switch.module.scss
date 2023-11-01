@@ -1,0 +1,35 @@
+.theme {
+  &--dark {
+  }
+  &--light {
+    .switch {
+      background-image: unset;
+      background-color: var(--color-toggle);
+      &:hover {
+        background-image: linear-gradient(to right, var(--color-toggle-linear));
+        background-color: unset;
+      }
+      &__circle {
+        background-color: var(--color-white);
+      }
+    }
+  }
+}
+.switch {
+  width: 3.125rem;
+  height: 1.5625rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: linear-gradient(to right, var(--color-toggle-linear));
+  position: relative;
+  cursor: pointer;
+  &__circle {
+    position: absolute;
+    border-radius: 1rem;
+    top: 0.15rem;
+    transition: all 0.3s;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: var(--VeryDarkBlueBG);
+  }
+}

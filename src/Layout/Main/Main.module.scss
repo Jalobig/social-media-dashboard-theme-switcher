@@ -1,0 +1,17 @@
+.main {
+  min-height: calc(100vh - 4rem);
+  &--dark {
+    background-image: linear-gradient(
+      to bottom,
+      var(--VeryDarkBlueTopBGPattern) 250px,
+      var(--VeryDarkBlueBG)
+    );
+  }
+  &--light {
+    background-image: linear-gradient(
+      to bottom,
+      var(--VeryPaleBlueTopBGPattern) 250px,
+      var(--color-white)
+    );
+  }
+}

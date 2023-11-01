@@ -1,0 +1,106 @@
+.theme {
+  &--dark {
+    .follower {
+      &__card {
+        background-color: var(--color-card-dark);
+        &:hover{
+          filter: brightness(120%);
+        }
+      }
+      &__text,
+      &__name {
+        color: var(--DesaturatedBlueText);
+      }
+      &__amount {
+        color: var(--color-white);
+      }
+    }
+  }
+  &--light {
+    .follower {
+      &__card {
+        background-color: var(--color-card-light);
+        &:hover{
+          filter: brightness(95%);
+        }
+      }
+      &__text,
+      &__name {
+        color: var(--DarkGrayishBlueTextt);
+      }
+      &__amount {
+        color: var(--VeryDarkBlueText);
+      }
+    }
+  }
+}
+.follower {
+  max-width: 69.375rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  &__card {
+    max-width: 15.625rem;
+    width: 90%;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    @media only screen and (max-width:606px) {
+      max-width: unset;
+      width: 100%;
+    }
+    
+    
+  }
+  &__band {
+    width: 100%;
+    height: 5px;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    margin-right: 0.5rem;
+  }
+  &__name {
+    font-size: 0.8rem;
+  }
+  &__amount {
+    font-size: 3rem;
+    margin-top: -1rem;
+  }
+  &__text {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+  }
+  &__band,
+  &__row {
+    margin-bottom: 2rem;
+  }
+  &__icon {
+    margin-right: 0.2rem;
+  }
+  &__delta {
+    &--down {
+      color: var(--color-down);
+    }
+    &--up {
+      color: var(--color-up);
+    }
+    &--down,
+    &--up {
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+  }
+}

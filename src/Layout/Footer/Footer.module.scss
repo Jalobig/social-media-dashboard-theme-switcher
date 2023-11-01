@@ -1,0 +1,18 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.footer{
+  padding: 2rem;
+  &--dark{
+    background-color: var(--VeryDarkBlueBG);
+    color: var(--color-white);
+    a {
+          color: var(--color-up);
+        }
+    }
+
+}
